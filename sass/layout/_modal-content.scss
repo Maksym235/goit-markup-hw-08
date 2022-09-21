@@ -83,10 +83,10 @@
   align-items: center;
   justify-content: center;
   margin-top: 20px;
-  font-weight: var(--secondary-font-weight);
-  font-size: var(--primary-font-size);
-  line-height: 1.71;
   color: var(--secondary-color);
+  font-weight: var(--secondary-font-weight);
+  font-size: 12px;
+  line-height: calc(14 / 12);
 }
 
 .modal-form-checkbox-icon {

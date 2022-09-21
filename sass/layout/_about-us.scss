@@ -1,5 +1,9 @@
 .about-us {
   padding-top: 0;
+
+  @media screen and (min-width: $mobile) {
+    display: none;
+  }
 }
 
 .about-us__title {

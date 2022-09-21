@@ -5,19 +5,22 @@
 .our-team__title {
   margin-bottom: 50px;
   font-weight: var(--primry-font-weight);
-  font-size: 36px;
-  line-height: 1.16em;
   text-align: center;
+  font-size: 28px;
+  line-height: calc(33 / 28);
+
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .workers-list {
-  column-gap: 30px;
-  display: flex;
+  display: block;
 }
 
 .workers-list__item {
   background-color: var(--other-color);
-  width: 270px;
+  width: 450px;
+  margin-bottom: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -32,7 +35,8 @@
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.18;
+
+  line-height: calc(19 / 16);
   text-align: center;
 }
 
@@ -40,7 +44,7 @@
   color: var(--secondary-color);
   font-weight: var(--secondary-font-weight);
   font-size: 16px;
-  line-height: 1.18;
+  line-height: calc(19 / 16);
   text-align: center;
 }
 
@@ -48,13 +52,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
   column-gap: 10px;
 }
 
 .links-list__link {
-  width: 44px;
-  height: 44px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   display: flex;
   justify-content: center;

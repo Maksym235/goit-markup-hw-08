@@ -7,14 +7,15 @@
 }
 
 .benefits-list {
-  display: flex;
+  display: block;
   font-weight: var(--primry-font-weight);
   line-height: 1.14em;
   column-gap: 30px;
+  gap: 30px;
 }
 
 .benefits-list__item {
-  width: 270px;
+  width: 450px;
 }
 
 .benefits-list__icon--svg {
@@ -28,7 +29,7 @@
   @extend %align;
   margin-bottom: 30px;
   border-radius: 4px;
-  width: 270px;
+  width: 450px;
   height: 120px;
   background-color: var(--secondary-background-color);
 }
@@ -39,6 +40,7 @@
   line-height: 1.14;
   margin-bottom: 10px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .benefits-list__text {

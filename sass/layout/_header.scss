@@ -12,7 +12,9 @@
 }
 
 .menu-list {
-  display: flex;
+  // display: flex;
+  display: none;
+
   column-gap: 50px;
   align-items: center;
   padding-left: 0;
@@ -54,7 +56,10 @@
 
 .contacts-list {
   margin-left: auto;
-  display: flex;
+  // display: flex;
+
+  display: none;
+
   column-gap: 50px;
   padding-left: 0;
   font-weight: 500;

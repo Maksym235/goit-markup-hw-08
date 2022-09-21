@@ -15,7 +15,9 @@
 }
 
 .button__baner {
-  padding: 10px 32px;
+  width: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   transition: color var(--transition-time-cubic), background-color var(--transition-time-cubic);
 }

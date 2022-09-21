@@ -1,17 +1,17 @@
 .regular-customers__title {
+  margin-bottom: 50px;
   font-family: var(--main-font-family);
   font-weight: var(--primry-font-weight);
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: calc(33 / 28);
   text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 50px;
 }
 
 .castomers-list {
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  gap: 30px;
   column-gap: 30px;
 }
 
@@ -19,7 +19,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid var(--primary-icon-color);
   border-radius: 4px;
