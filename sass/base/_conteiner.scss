@@ -1,11 +1,16 @@
 .conteiner {
-  width: 480px;
-  @include push-auto;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
 
+  @media screen and (min-width: $mobile) {
+    width: 450px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
   @media screen and (min-width: $tablet) {
-    width: 768px;
+    width: 720px;
   }
 
   @media screen and (min-width: $desctop) {
