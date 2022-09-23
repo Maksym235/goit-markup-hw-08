@@ -29,6 +29,7 @@
 }
 
 .button__subscribe {
+  @include push-auto;
   width: 200px;
   padding-top: 10px;
   padding-bottom: 10px;

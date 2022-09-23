@@ -89,7 +89,13 @@
         <ul class="contacts-list list">
           <li class="contacts-list__item">
             <a class="page-header__email link" href="mailto:info@devstudio.com">
-              <svg lang="en" aria-label="email logo" class="page-header__email--icon">
+              <svg
+                lang="en"
+                aria-label="email logo"
+                class="page-header__email--icon"
+                width="16"
+                height="12"
+              >
                 <use href="./images/icons.svg.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
@@ -97,7 +103,13 @@
           </li>
           <li class="contacts-list__item">
             <a class="page-header__tel link" href="tel:+380961111111">
-              <svg lang="en" aria-label="smartphone logo" class="page-header__tel--icon">
+              <svg
+                lang="en"
+                aria-label="smartphone logo"
+                class="page-header__tel--icon"
+                width="10"
+                height="16"
+              >
                 <use href="./images/icons.svg.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -438,26 +450,26 @@
               </li>
             </ul>
           </div>
-          <form class="subscribe-form">
-            <b class="subscribe__title">Підпишіться на розсилку</b>
-            <div class="subscribe-wrapper">
-              <label class="subscribe-wrapper__label" for="subscribe-mail"></label>
-              <input
-                class="subscribe-wrapper__input"
-                name="subscribe-user-mail"
-                id="subscribe-mail"
-                type="email"
-                placeholder="E-mail"
-              />
-              <button class="button button__subscribe" type="submit">
-                Підписатися
-                <svg class="subscribe-wrapper__icon--send" width="24" height="24">
-                  <use href="./images/icons.svg.svg#icon-send"></use>
-                </svg>
-              </button>
-            </div>
-          </form>
         </div>
+        <form class="subscribe-form">
+          <b class="subscribe__title">Підпишіться на розсилку</b>
+          <div class="subscribe-wrapper">
+            <label class="subscribe-wrapper__label" for="subscribe-mail"></label>
+            <input
+              class="subscribe-wrapper__input"
+              name="subscribe-user-mail"
+              id="subscribe-mail"
+              type="email"
+              placeholder="E-mail"
+            />
+            <button class="button button__subscribe" type="submit">
+              Підписатися
+              <svg class="subscribe-wrapper__icon--send" width="24" height="24">
+                <use href="./images/icons.svg.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
     <div data-modal class="backdrop is-hidden">

@@ -1,9 +1,11 @@
-.about-us {
-  padding-top: 0;
-
-  @media screen and (min-width: $mobile) {
+@media screen and (max-width: 1199px) {
+  .about-us {
     display: none;
   }
+}
+
+.about-us {
+  padding-top: 0;
 }
 
 .about-us__title {
