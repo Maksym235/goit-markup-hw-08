@@ -15,7 +15,9 @@
 }
 
 .services-list__link {
-  display: block;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   transition: box-shadow var(--transition-time-cubic);
 
   &:hover,
@@ -32,7 +34,7 @@
 
 .card-overlay__text {
   position: absolute;
-  transform: translateY(100%);
+  transform: translateY(101%);
   top: 0;
   left: 0;
   padding: 63px 24px;
@@ -52,6 +54,7 @@
 }
 
 .card-desc {
+  flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: 0;
