@@ -2,18 +2,23 @@
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
+}
 
-  @media screen and (min-width: $mobile) {
+@media screen and (min-width: $mobile) {
+  .conteiner {
     width: 450px;
     margin-left: auto;
     margin-right: auto;
   }
-
-  @media screen and (min-width: $tablet) {
+}
+@media screen and (min-width: $tablet) {
+  .conteiner {
     width: 768px;
   }
+}
 
-  @media screen and (min-width: $desctop) {
+@media screen and (min-width: $desctop) {
+  .conteiner {
     width: 1200px;
   }
 }

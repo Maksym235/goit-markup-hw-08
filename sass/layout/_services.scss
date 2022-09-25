@@ -10,8 +10,10 @@
   line-height: 1.62;
 }
 
-.services-list__item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 1199px) {
+  .services-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .services-list__link {
@@ -87,6 +89,8 @@
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .services-list__item {
@@ -96,7 +100,16 @@
 }
 
 @media screen and (min-width: $desctop) {
+  .services-list {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .services-list__item {
     width: calc((100% - 6 * 15px) / 3);
   }
+
+  // .services-list__item:not(:last-child) {
+  //   margin-bottom: 0;
+  // }
 }

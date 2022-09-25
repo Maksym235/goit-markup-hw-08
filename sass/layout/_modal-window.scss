@@ -2,11 +2,17 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 100%;
   transform: translate(-50%, -50%);
-  width: 450px;
   background-color: var(--other-color);
 
   @media screen and (min-width: $desctop) {
     width: 528px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 480px;
   }
 }

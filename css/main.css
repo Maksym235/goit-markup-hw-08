@@ -82,6 +82,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
+
 @media screen and (min-width: 480px) {
   .conteiner {
     width: 450px;
@@ -99,12 +100,17 @@ body {
     width: 1200px;
   }
 }
-
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
+@media screen and (max-width: 1199px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 .button {
   display: flex;
   justify-content: center;
@@ -359,16 +365,24 @@ body {
   }
 }
 .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding-top: 48px;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #ffffff;
-  z-index: 1000;
+  background-color: #fff;
+  z-index: 5;
+  overflow-y: scroll;
   opacity: 0;
   visibility: hidden;
   transition: opacity var(--transition-time-cubic), visibility var(--transition-time-cubic), display var(--transition-time-cubic);
+}
+@media screen and (min-width: 480px) {
+  .mobile-menu {
+    width: 480px;
+  }
 }
 @media screen and (min-width: 767px) {
   .mobile-menu {
@@ -393,11 +407,8 @@ body {
   height: 40px;
   border: none;
   background-color: transparent;
+  fill: var(--main-color);
   padding: 0;
-}
-
-.mobile-menu-list {
-  padding-top: 38px;
 }
 
 .mobile-menu-list__item:not(:last-child) {
@@ -426,7 +437,8 @@ body {
 }
 
 .mobile-menu-contacts-list {
-  margin-top: 302px;
+  flex-direction: column-reverse;
+  margin-top: auto;
   margin-bottom: 64px;
 }
 
@@ -453,7 +465,9 @@ body {
 
 .mobile-menu-links-list {
   display: flex;
+  flex-wrap: wrap;
   column-gap: 20px;
+  gap: 20px;
 }
 
 .mobile-menu-links-list__item {
@@ -477,6 +491,12 @@ body {
   color: var(--accent-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .baner {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
 .baner {
   padding-top: 118px;
   padding-bottom: 118px;
@@ -490,34 +510,34 @@ body {
   margin-left: auto;
   margin-right: auto;
   background-color: #c4c4c4;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/baner/bg-s.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/baner/bg-s.jpg");
   background-position: center;
   background-size: cover;
 }
 
-@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
-  .overlay {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/baner/bg-s@2x.jpg");
-  }
-}
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 1), screen and (min-width: 768px) and (min-resolution: 96dpi), screen and (min-width: 768px) and (min-resolution: 1dppx) {
-  .overlay {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/baner/bg-m.jpg");
-  }
-}
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .overlay {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/baner/bg-m@2x.jpg");
-  }
-}
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 1), screen and (min-width: 1200px) and (min-resolution: 96dpi), screen and (min-width: 1200px) and (min-resolution: 1dppx) {
   .overlay {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/baner/bg-l.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/baner/bg-l.jpg");
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .overlay {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/baner/bg-l@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/baner/bg-l@2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 1), screen and (min-width: 768px) and (min-resolution: 96dpi), screen and (min-width: 768px) and (min-resolution: 1dppx) {
+  .overlay {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/baner/bg-m.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/baner/bg-m@2x.jpg");
+  }
+}
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/baner/bg-s@2x.jpg");
   }
 }
 .page-baner {
@@ -536,6 +556,11 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .page-baner__title {
+    width: 360px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .page-baner__title {
@@ -943,15 +968,21 @@ body {
 @media screen and (min-width: 1200px) {
   .footer-conteiner {
     display: flex;
+    align-items: baseline;
   }
   .address-group,
 .address-list {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin: 0;
   }
   .social-links {
     margin-left: 70px;
+    margin-bottom: 0;
+  }
+  .links-list {
+    padding: 0;
   }
   .subscribe-form {
     margin-left: auto;
@@ -989,8 +1020,8 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 100%;
   transform: translate(-50%, -50%);
-  width: 450px;
   background-color: var(--other-color);
 }
 @media screen and (min-width: 1200px) {
@@ -999,6 +1030,11 @@ body {
   }
 }
 
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 480px;
+  }
+}
 .modal-content {
   padding: 40px;
 }
