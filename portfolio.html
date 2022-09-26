@@ -23,19 +23,14 @@
   <body>
     <header class="page-header">
       <div class="header-conteiner conteiner">
-        <div class="mobile-menu" data-menu>
+        <div class="mobile-menu conteiner" data-menu>
           <div class="conteiner mobile-menu__conteiner">
-            <button type="button" class="mobile-menu-close-btn" data-menu-close>
-              <svg class="mobile-menu-close-btn__icon" width="40" height="40">
-                <use href="/images/sprite.svg#icon-close-icon"></use>
-              </svg>
-            </button>
             <ul class="mobile-menu-list list">
               <li class="mobile-menu-list__item">
-                <a href="./index.html" class="mobile-menu-list__link link">Студія</a>
+                <a href="./index.html" class="current mobile-menu-list__link link">Студія</a>
               </li>
               <li class="mobile-menu-list__item">
-                <a href="./portfolio.html" class="mobile-menu-list__link current link">Портфоліо</a>
+                <a href="./portfolio.html" class="mobile-menu-list__link link">Портфоліо</a>
               </li>
               <li class="mobile-menu-list__item">
                 <a href="" class="mobile-menu-list__link link">Контакти</a>
@@ -65,18 +60,24 @@
                 <a href="" class="mobile-menu-links-list__link link">Linkedin</a>
               </li>
             </ul>
+            <button type="button" class="mobile-menu-close-btn" data-menu-close>
+              <svg class="mobile-menu-close-btn__icon" width="40" height="40">
+                <use href="./images/sprite.svg#icon-close-icon"></use>
+              </svg>
+            </button>
           </div>
         </div>
+
         <nav class="page-navigation">
           <a class="logo logo__header link" href="./index.html"
             ><span class="logo__element">Web</span>Studio</a
           >
           <ul class="menu-list list">
             <li class="menu-list__item">
-              <a class="menu-list__link link" href="./index.html">Студія</a>
+              <a class="menu-list__link link current" href="./index.html">Студія</a>
             </li>
             <li class="menu-list__item">
-              <a class="menu-list__link link current" href="./portfolio.html">Портфоліо</a>
+              <a class="menu-list__link link" href="./portfolio.html">Портфоліо</a>
             </li>
             <li class="menu-list__item"><a class="menu-list__link link" href="">Контакти</a></li>
           </ul>
