@@ -391,7 +391,7 @@ body {
 
 .mobile-menu__conteiner {
   position: relative;
-  height: 100%;
+  height: 100vh;
 }
 
 .mobile-menu-close-btn {
@@ -432,11 +432,12 @@ body {
   }
 }
 
-.mobile-menu-contacts-list {
-  margin-top: auto;
-  margin-bottom: 64px;
+@media screen and (max-width: 767px) {
+  .mobile-menu-contacts-list {
+    margin-top: auto;
+    margin-bottom: 64px;
+  }
 }
-
 .mobile-menu-contacts-list__item:not(:last-child) {
   margin-bottom: 32px;
 }
