@@ -18,27 +18,9 @@
   @include push-auto;
   background-color: #c4c4c4;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../../images/baner/bg-s.jpg');
+    url('../images/baner/baner-desctop.jpg');
   background-position: center;
   background-size: cover;
-}
-
-@media screen and (min-width: $desctop) and (min-device-pixel-ratio: 1),
-  screen and (min-width: $desctop) and (min-resolution: 96dpi),
-  screen and (min-width: $desctop) and (min-resolution: 1dppx) {
-  .overlay {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../../images/baner/bg-l.jpg');
-  }
-}
-
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
-  screen and (min-width: 1200px) and (min-resolution: 192dpi),
-  screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .overlay {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../../images/baner/bg-l@2x.jpg');
-  }
 }
 
 @media screen and (min-width: $tablet) and (min-device-pixel-ratio: 1),
@@ -46,16 +28,7 @@
   screen and (min-width: $tablet) and (min-resolution: 1dppx) {
   .overlay {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../../images/baner/bg-m.jpg');
-  }
-}
-
-@media screen and (min-width: $tablet) and (min-device-pixel-ratio: 2),
-  screen and (min-width: $tablet) and (min-resolution: 192dpi),
-  screen and (min-width: $tablet) and (min-resolution: 2dppx) {
-  .overlay {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../../images/baner/bg-m@2x.jpg');
+      url('../images/baner/baner-tablet.jpg');
   }
 }
 
@@ -64,7 +37,34 @@
   screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .overlay {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../../images/baner/bg-s@2x.jpg');
+      url('../images/baner/baner-mobile@2x.jpg');
+  }
+}
+
+@media screen and (min-width: $tablet) and (min-device-pixel-ratio: 2),
+  screen and (min-width: $tablet) and (min-resolution: 192dpi),
+  screen and (min-width: $tablet) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/baner/baner-tablet@2x.jpg');
+  }
+}
+
+@media screen and (min-width: $desctop) and (min-device-pixel-ratio: 1),
+  screen and (min-width: $desctop) and (min-resolution: 96dpi),
+  screen and (min-width: $desctop) and (min-resolution: 1dppx) {
+  .overlay {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/baner/baner-desctop.jpg');
+  }
+}
+
+@media screen and (min-width: $desctop) and (min-device-pixel-ratio: 2),
+  screen and (min-width: $desctop) and (min-resolution: 192dpi),
+  screen and (min-width: $desctop) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/baner/baner-desctop@2x.jpg');
   }
 }
 

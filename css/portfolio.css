@@ -391,11 +391,12 @@ body {
 
 .mobile-menu__conteiner {
   position: relative;
+  height: 100%;
 }
 
 .mobile-menu-close-btn {
   position: absolute;
-  top: 10px;
+  top: 0;
   right: 15px;
   width: 40px;
   height: 40px;
@@ -403,6 +404,7 @@ body {
   background-color: transparent;
   fill: var(--main-color);
   padding: 0;
+  z-index: 10;
 }
 
 .mobile-menu-list__item:not(:last-child) {
@@ -431,7 +433,6 @@ body {
 }
 
 .mobile-menu-contacts-list {
-  flex-direction: column-reverse;
   margin-top: auto;
   margin-bottom: 64px;
 }
