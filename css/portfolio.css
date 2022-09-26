@@ -392,6 +392,8 @@ body {
 .mobile-menu__conteiner {
   position: relative;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .mobile-menu-close-btn {
