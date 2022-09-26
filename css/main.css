@@ -368,6 +368,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  width: 100%;
   padding-top: 48px;
   position: fixed;
   top: 0;
@@ -400,6 +401,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .mobile-menu-close-btn {
@@ -410,9 +412,12 @@ body {
   height: 40px;
   border: none;
   background-color: transparent;
-  fill: var(--main-color);
   padding: 0;
   z-index: 10;
+}
+
+.mobile-menu-close-btn__icon {
+  fill: var(--main-color);
 }
 
 .mobile-menu-list__item:not(:last-child) {
@@ -509,6 +514,7 @@ body {
 }
 
 .overlay {
+  max-width: 480px;
   height: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -518,14 +524,15 @@ body {
   background-size: cover;
 }
 
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 1), screen and (min-width: 768px) and (min-resolution: 96dpi), screen and (min-width: 768px) and (min-resolution: 1dppx) {
-  .overlay {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/baner/baner-tablet.jpg");
-  }
-}
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .overlay {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/baner/baner-mobile@2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 1), screen and (min-width: 768px) and (min-resolution: 96dpi), screen and (min-width: 768px) and (min-resolution: 1dppx) {
+  .overlay {
+    max-width: 768px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/baner/baner-tablet.jpg");
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
@@ -535,6 +542,7 @@ body {
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 1), screen and (min-width: 1200px) and (min-resolution: 96dpi), screen and (min-width: 1200px) and (min-resolution: 1dppx) {
   .overlay {
+    max-width: 1200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/baner/baner-desctop.jpg");
   }
 }
