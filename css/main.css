@@ -308,6 +308,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10px;
     color: var(--secondary-color);
     font-weight: 500;
     transition: color var(--transition-time-cubic);
@@ -500,21 +501,21 @@ body {
   color: var(--accent-color);
 }
 
-@media screen and (min-width: 1200px) {
-  .baner {
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
-}
 .baner {
   padding-top: 118px;
   padding-bottom: 118px;
   background-color: var(--primary-background-color);
   color: var(--other-color);
 }
+@media screen and (min-width: 1200px) {
+  .baner {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
 
 .overlay {
-  max-width: 480px;
+  max-width: 767px;
   height: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -531,7 +532,7 @@ body {
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 1), screen and (min-width: 768px) and (min-resolution: 96dpi), screen and (min-width: 768px) and (min-resolution: 1dppx) {
   .overlay {
-    max-width: 768px;
+    max-width: 1199px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/baner/baner-tablet.jpg");
   }
 }
@@ -542,7 +543,8 @@ body {
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 1), screen and (min-width: 1200px) and (min-resolution: 96dpi), screen and (min-width: 1200px) and (min-resolution: 1dppx) {
   .overlay {
-    max-width: 1200px;
+    height: 600px;
+    max-width: 1600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/baner/baner-desctop.jpg");
   }
 }
@@ -991,6 +993,7 @@ body {
   .social-links {
     margin-left: 70px;
     margin-bottom: 0;
+    align-items: flex-start;
   }
   .links-list {
     padding: 0;
@@ -1035,15 +1038,15 @@ body {
   transform: translate(-50%, -50%);
   background-color: var(--other-color);
 }
-@media screen and (min-width: 1200px) {
-  .modal {
-    width: 528px;
-  }
-}
 
 @media screen and (min-width: 480px) {
   .modal {
     width: 480px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
   }
 }
 .modal-content {

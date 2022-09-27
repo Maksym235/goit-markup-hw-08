@@ -302,6 +302,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10px;
     color: var(--secondary-color);
     font-weight: 500;
     transition: color var(--transition-time-cubic);
@@ -748,6 +749,7 @@ body {
   .social-links {
     margin-left: 70px;
     margin-bottom: 0;
+    align-items: flex-start;
   }
   .links-list {
     padding: 0;

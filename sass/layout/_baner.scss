@@ -1,19 +1,17 @@
-@media screen and (min-width: $desctop) {
-  .baner {
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
-}
-
 .baner {
   padding-top: 118px;
   padding-bottom: 118px;
   background-color: var(--primary-background-color);
   color: var(--other-color);
+
+  @media screen and (min-width: $desctop) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .overlay {
-  max-width: 480px;
+  max-width: 767px;
   height: 400px;
   @include push-auto;
   background-color: #c4c4c4;
@@ -36,7 +34,7 @@
   screen and (min-width: $tablet) and (min-resolution: 96dpi),
   screen and (min-width: $tablet) and (min-resolution: 1dppx) {
   .overlay {
-    max-width: 768px;
+    max-width: 1199px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url('../images/baner/baner-tablet.jpg');
   }
@@ -55,7 +53,8 @@
   screen and (min-width: $desctop) and (min-resolution: 96dpi),
   screen and (min-width: $desctop) and (min-resolution: 1dppx) {
   .overlay {
-    max-width: 1200px;
+    height: 600px;
+    max-width: 1600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url('../images/baner/baner-desctop.jpg');
   }
